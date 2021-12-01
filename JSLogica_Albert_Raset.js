@@ -1,9 +1,11 @@
-//Exercici 4
-var n = 0;
-var num = prompt("Introdueix un número:")
-for(var i = 1; n < num; i++){
-    console.log('La n = ' + n)
-    n+=i
-    
+//Exercici 5
+
+var text  = "1g22 1h4te 2ary 54st2 5yu4s"
+var num = text.replace(/[^0-9]/gi, "")
+var suma = 0
+
+for (var i = 0; i < num.length; i++){
+    suma += Number(num.charAt(i))
 }
-console.log('El total de n es: ' + n + "\nI el numero d'iteracions són: " + i)
+
+console.log(suma);
